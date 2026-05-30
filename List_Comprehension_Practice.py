@@ -1,20 +1,14 @@
-# 1. Create a list of numbers from 1 to 10
-numbers = [x for x in range(1, 11)]
-print(numbers)
+num = int(input("Enter a number: "))
 
-# 2. Create a list of squares
-squares = [x**2 for x in range(1, 11)]
-print(squares)
+odd_numbers = [i for i in range(num) if i % 2 != 0]
+even_numbers = [i for i in range(num) if i % 2 == 0]
 
-# 3. Create a list of even numbers
-evens = [x for x in range(1, 21) if x % 2 == 0]
-print(evens)
+print("Odd numbers:", odd_numbers)
+print("Even numbers:", even_numbers)
 
-# 4. Create a list of odd numbers
-odds = [x for x in range(1, 21) if x % 2 != 0]
-print(odds)
+fruits = ["apple", "banana", "mango", "orange", "grapes"]
 
-# 5. Convert names to uppercase
-names = ["john", "alice", "bob"]
-upper_names = [name.upper() for name in names]
-print(upper_names)
+capitalized_fruits = [fruit.capitalize() for fruit in fruits]
+
+print("Original List:", fruits)
+print("Updated List:", capitalized_fruits)
